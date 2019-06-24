@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name invaders)(type Legacy)(uri /home/anya/git/circuits/invaders/invaders.lib)(options "")(descr "")(disabled))
+  (lib (name invaders-rescue)(type Legacy)(uri ${KIPRJMOD}/invaders-rescue.lib)(options "")(descr "")(disabled))
+  (lib (name A-symbols)(type Legacy)(uri /home/anya/git/circuits/lib/A-symbols.lib)(options "")(descr ""))
+)
