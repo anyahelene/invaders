@@ -88,8 +88,9 @@ ENDDEF
 DEF A-symbols_Micro_Thumb_JoyStick-invaders JS 0 40 Y Y 1 F N
 F0 "JS" -5 245 50 H V C CNN
 F1 "A-symbols_Micro_Thumb_JoyStick-invaders" 20 315 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
+F2 "a-symbols:psp_thumbstick" 50 -800 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
+F4 "PSP1000 thumbstick" 50 -900 50 H V C CNN "Part"
 DRAW
 C -5 0 110 0 1 0 F
 C 175 220 18 0 1 0 N
@@ -110,7 +111,7 @@ DEF A-symbols_OLED_Panel_1in3_I2C OLED 0 40 Y Y 1 F N
 F0 "OLED" 0 -250 50 H V C CNN
 F1 "A-symbols_OLED_Panel_1in3_I2C" 0 -150 50 H V C CNN
 F2 "" -50 -50 50 H I C CNN
-F3 "" -50 -50 50 H I C CNN
+F3 "https://www.elecrow.com/download/SH1106%20datasheet.pdf" -50 -350 50 H I C CNN
 DRAW
 S -300 200 300 -200 0 1 10 f
 X VCC 1 -150 350 150 D 50 50 1 1 W
@@ -126,7 +127,7 @@ DEF A-symbols_OLED_Panel_1in5_RGB_SPI OLED 0 40 Y Y 1 F N
 F0 "OLED" 0 -150 50 H V C CNN
 F1 "A-symbols_OLED_Panel_1in5_RGB_SPI" 0 200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+F3 "https://www.waveshare.com/wiki/1.5inch_RGB_OLED_Module" 50 -600 50 H I C CNN
 DRAW
 S -450 150 450 -550 0 1 10 f
 X RST 1 -600 -500 151 R 50 50 1 1 I
@@ -145,7 +146,7 @@ DEF A-symbols_OLED_Panel_2in42_SPI_I2C OLED 0 40 Y Y 1 F N
 F0 "OLED" 0 -150 50 H V C CNN
 F1 "A-symbols_OLED_Panel_2in42_SPI_I2C" 0 200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
+F3 "http://www.hpinfotech.ro/SSD1309.pdf" -50 -600 50 H I C CNN
 DRAW
 S -450 150 450 -550 0 1 10 f
 X GND 1 -600 -500 151 R 50 50 1 1 W
@@ -466,6 +467,23 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Device_R_Small
+#
+DEF Device_R_Small R 0 10 N N 1 F N
+F0 "R" 30 20 50 H V L CNN
+F1 "Device_R_Small" 30 -40 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -30 70 30 -70 0 1 8 N
+X ~ 1 0 100 30 D 50 50 1 1 P
+X ~ 2 0 -100 30 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_Speaker
 #
 DEF Device_Speaker LS 0 0 Y N 1 F N
@@ -587,7 +605,7 @@ ENDDEF
 #
 # power_Earth
 #
-DEF ~power_Earth #PWR 0 0 Y Y 1 F P
+DEF power_Earth #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
 F1 "power_Earth" 0 -150 50 H I C CNN
 F2 "" 0 0 50 H I C CNN
