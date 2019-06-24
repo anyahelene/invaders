@@ -104,11 +104,11 @@ X GND 4 150 -300 100 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# A-symbols_OLED_Panel_I2C-invaders
+# A-symbols_OLED_Panel_1in3_I2C
 #
-DEF A-symbols_OLED_Panel_I2C-invaders D 0 40 Y Y 1 F N
-F0 "D" 0 -250 50 H V C CNN
-F1 "A-symbols_OLED_Panel_I2C-invaders" 0 -150 50 H V C CNN
+DEF A-symbols_OLED_Panel_1in3_I2C OLED 0 40 Y Y 1 F N
+F0 "OLED" 0 -250 50 H V C CNN
+F1 "A-symbols_OLED_Panel_1in3_I2C" 0 -150 50 H V C CNN
 F2 "" -50 -50 50 H I C CNN
 F3 "" -50 -50 50 H I C CNN
 DRAW
@@ -120,15 +120,15 @@ X SDA 4 150 350 150 D 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# A-symbols_OLED_Panel_RGB_SPI
+# A-symbols_OLED_Panel_1in5_RGB_SPI
 #
-DEF A-symbols_OLED_Panel_RGB_SPI D 0 40 Y Y 1 F N
-F0 "D" 0 -150 50 H V C CNN
-F1 "A-symbols_OLED_Panel_RGB_SPI" 0 200 50 H V C CNN
+DEF A-symbols_OLED_Panel_1in5_RGB_SPI OLED 0 40 Y Y 1 F N
+F0 "OLED" 0 -150 50 H V C CNN
+F1 "A-symbols_OLED_Panel_1in5_RGB_SPI" 0 200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
-S -450 150 450 -550 0 1 10 N
+S -450 150 450 -550 0 1 10 f
 X RST 1 -600 -500 151 R 50 50 1 1 I
 X DC 2 -600 -400 151 R 50 50 1 1 I
 X DIN 3 -600 -100 151 R 50 50 1 1 I
@@ -139,15 +139,15 @@ X VCC 7 -600 100 151 R 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# A-symbols_OLED_Panel_SPI_I2C-invaders
+# A-symbols_OLED_Panel_2in42_SPI_I2C
 #
-DEF A-symbols_OLED_Panel_SPI_I2C-invaders D 0 40 Y Y 1 F N
-F0 "D" 0 -150 50 H V C CNN
-F1 "A-symbols_OLED_Panel_SPI_I2C-invaders" 0 200 50 H V C CNN
+DEF A-symbols_OLED_Panel_2in42_SPI_I2C OLED 0 40 Y Y 1 F N
+F0 "OLED" 0 -150 50 H V C CNN
+F1 "A-symbols_OLED_Panel_2in42_SPI_I2C" 0 200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
-S -450 150 450 -550 0 1 10 N
+S -450 150 450 -550 0 1 10 f
 X GND 1 -600 -500 151 R 50 50 1 1 W
 X VCC 2 -600 -400 151 R 50 50 1 1 W
 X SCL 3 -600 -100 151 R 50 50 1 1 I

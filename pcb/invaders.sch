@@ -26,11 +26,11 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20w
 	1    0    0    -1  
 $EndComp
 $Comp
-L A-symbols:OLED_Panel_I2C-invaders D1
+L A-symbols:OLED_Panel_1in3_I2C OLED1
 U 1 1 5B71DB68
 P 4400 5450
-F 0 "D1" H 4750 5600 50  0000 L CNN
-F 1 "OLED_1in3" H 4750 5500 50  0000 L CNN
+F 0 "OLED1" H 4150 5400 50  0000 L CNN
+F 1 "OLED_1in3" H 4150 5300 50  0000 L CNN
 F 2 "invaders:OLED_1in3_i2c" H 4350 5400 50  0001 C CNN
 F 3 "" H 4350 5400 50  0001 C CNN
 	1    4400 5450
@@ -171,8 +171,6 @@ Wire Wire Line
 	3350 4050 3600 4050
 Text Label 3600 3950 0    50   ~ 0
 ADC0
-Text Label 4800 4350 0    50   ~ 0
-Panel_RST
 Wire Wire Line
 	3350 4150 3600 4150
 Text Label 3600 4150 0    50   ~ 0
@@ -618,11 +616,11 @@ XTAL2
 Text Label 4950 2200 0    50   ~ 0
 Audio_Out
 $Comp
-L A-symbols:OLED_Panel_SPI_I2C-invaders D2
+L A-symbols:OLED_Panel_2in42_SPI_I2C OLED2
 U 1 1 5B8AAD32
 P 6150 5650
-F 0 "D2" H 6650 5550 50  0000 L CNN
-F 1 "OLED_2in42" H 6650 5450 50  0000 L CNN
+F 0 "OLED2" H 6000 5700 50  0000 L CNN
+F 1 "OLED_2in42" H 6000 5600 50  0000 L CNN
 F 2 "invaders:OLED_2in42_spi_i2c" H 6150 5650 50  0001 C CNN
 F 3 "" H 6150 5650 50  0001 C CNN
 	1    6150 5650
@@ -645,16 +643,16 @@ Wire Wire Line
 Wire Wire Line
 	5550 5850 5300 5850
 Wire Wire Line
-	5550 5750 5300 5750
+	5550 5750 5000 5750
 Wire Wire Line
-	5550 5550 5300 5550
+	5550 5550 5000 5550
 Wire Wire Line
-	5550 5650 5300 5650
-Text Label 5300 5650 0    50   ~ 0
+	5550 5650 5000 5650
+Text Label 5000 5650 0    50   ~ 0
 Panel_DataCmd
-Text Label 5300 5750 0    50   ~ 0
+Text Label 5000 5750 0    50   ~ 0
 Panel_RST
-Text Label 5300 5550 0    50   ~ 0
+Text Label 5000 5550 0    50   ~ 0
 Panel_CS
 Wire Wire Line
 	3350 4250 3600 4250
@@ -1419,11 +1417,11 @@ F 3 "~" H 8950 3900 50  0001 C CNN
 $EndComp
 Connection ~ 8950 3900
 $Comp
-L A-symbols:OLED_Panel_RGB_SPI D8
+L A-symbols:OLED_Panel_1in5_RGB_SPI OLED3
 U 1 1 5D403A31
 P 6150 6700
-F 0 "D8" H 6650 6600 50  0000 L CNN
-F 1 "OLED_1in5_RGB" H 6650 6500 50  0000 L CNN
+F 0 "OLED3" H 6000 6700 50  0000 L CNN
+F 1 "OLED_1in5_RGB" H 6000 6600 50  0000 L CNN
 F 2 "invaders:OLED_1in5_spi_rgb" H 6150 6700 50  0001 C CNN
 F 3 "" H 6150 6700 50  0001 C CNN
 	1    6150 6700
