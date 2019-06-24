@@ -32,3 +32,4 @@
 * [KiCad](http://www.kicad-pcb.org/) files for the board can be found in the [pcb/](pcb/) subdirectory.
 * You also need the symbols and footprints from https://github.com/anyahelene/a-symbols
 * Alternatively, the board can be manufactured directly from the Gerber files in [pcb/fab/](pcb/fab/).
+* An [interactive BOM](https://htmlpreview.github.io/?https://github.com/anyahelene/invaders/blob/master/pcb/bom/ibom.html) is available in [pcb/bom/](pcb/bom/)
